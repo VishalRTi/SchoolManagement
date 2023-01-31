@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px lightgray;
+        background-color: white;
+      }
+      
+      label, input[type="submit"] {
+        margin-top: 1rem;
+      }
+      
+      input[type="text"], input[type="password"] {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        width: 300px;
+      }
+      
+      input[type="submit"] {
+        background-color: lightblue;
+        color: white;
+        padding: 0.75rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="login"method="post">
+        <h3>Login</h3>
+        <label for="username">Email:</label>
+        <input type="text" id="username" name="email">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
